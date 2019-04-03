@@ -4,6 +4,9 @@ An MQTT ESP-Now Gateway   --   Using the W5500 module to create a hardwired ethe
 ##  == WARNING ==
 This is an alpha version of this code,released here in the hope that it will help others to get the basic hardware (ESP32 + WizNet W5500 Ethernet module) working.
 
+#### Son-of-the-warning
+The original ESP8266 version of this project timed-out and crashed when configured to use DHCP rather than a hard-coded IP.  I would recommend you stick with a hard-coded IP for initial testing, as I haven't tried DHCP at all, yet (let me know how it goes if you do).
+
 ## == LICENCE NOTE ==
 Because this version of the code is released complete with Hristo Gochkov's SPI library (see lib directory), it is also released under the same GNU Lesser 2.1 licence.  Later versions will probably be released without the library and under a different licence.
 
