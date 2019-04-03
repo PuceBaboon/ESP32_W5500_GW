@@ -13,7 +13,7 @@ Because this version of the code is released complete with Hristo Gochkov's SPI 
 ### The code
 This is a PlatformIO build (and if you haven't tried PlatformIO yet, you really should, it's great!) and is easily adaptable to the Arduino IDE, if that happens to be your weapon of choice.
 
-The PlatformIO platformio.ini file will automatically download and install the correct Ethernet and PubSubClient libraries for you when you type "pio run" the first time.  The SPI library is already shipped in the lib directory, as that particular version wasn't generally available when I originally wrote the code (and it contains a coule of fixes essential to the ESP32 platform).
+Under PlatformIO, the platformio.ini file will automatically download and install the correct Ethernet and PubSubClient libraries for you when you type "pio run" for the first time.  The SPI library is already shipped in the lib directory, as that particular version wasn't generally available when I originally wrote the code (and it contains a coule of fixes essential to the ESP32 platform).
 
 ### What does it do?
 At the moment, this is simply something to get you going with the ESP32 and the W5500 module.  It doesn't do anything much more than initialize the module and make an initial connection to your MQTT server (broker).
