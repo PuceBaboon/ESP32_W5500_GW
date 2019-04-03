@@ -20,12 +20,19 @@ It does have some clunky hardware checks in the start-up code, so pay attention 
 You should be able to build on this code to implement any of the client/server samples in the /examples directory of the Ethernet library.
 
 ### Practical notes
-This was written with the specific intention of building an ESP-Now to MQTT gateway, so there is no code on the ESP32 side for authenticating with or joining a local WiFi network (the premis of ESP-Now is that it is a fast, point-to-point connection without all of the nicities, or overhead, of a full WiFi network connection).  Adding back the WiFi stuff is extremely easy (basically, look at any networked, non-ESP-Now code and copy it).
+This was written with the specific intention of building an ESP-Now to MQTT gateway, so there is no code on the ESP32 side for authenticating with or joining a local WiFi network (the premis of ESP-Now is that it is a fast, point-to-point connection without all of the niceties, or overhead, of a full WiFi network connection).  Adding back the WiFi stuff is extremely easy (basically, look at any networked, non-ESP-Now code and copy it).
 
 Don't ask me where you should input your access-point logon credentials.  :-)
 
 The physical connections between the ESP32 and W5500 are different, but simpler than the ESP8266 version (you don't need to buffer GPIO15 on the ESP32).
 
+-  **GPIO23**   <-->   **MOSI**
+-  **GPIO19**   <-->   **MISO**
+-  **GPIO18**   <-->   **SCLK**
+-  **GPIO5**    <-->   **SCS**
+-  **GPIO26**   <-->   **RESET**
+
+As always, you do need a good solid DC supply for both boards and a good ground connection between them in addition to the data lines listed above.
 
 
 
