@@ -11,7 +11,7 @@ The original ESP8266 version of this project timed-out and crashed when configur
 Because this version of the code is released complete with Hristo Gochkov's SPI library (see lib directory), it is also released under the same GNU Lesser 2.1 licence.  Later versions will probably be released without the library and under a different licence.
 
 ### The code
-This is a PlatformIO build (and if you haven't tried PlatformIO yet, you really should, it's great!) and is easily adaptable to the Arduino IDE, if that happens to be your weapon of choice.
+This is a PlatformIO build (and if you haven't tried PlatformIO yet, you really should, it's great!), but is easily adapted to the Arduino IDE, if that happens to be your weapon of choice.
 
 Under PlatformIO, the platformio.ini file will automatically download and install the correct Ethernet and PubSubClient libraries for you when you type "pio run" for the first time.  The SPI library is already shipped in the lib directory, as that particular version wasn't generally available when I originally wrote the code (and it contains a coule of fixes essential to the ESP32 platform).
 
