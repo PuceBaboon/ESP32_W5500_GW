@@ -24,7 +24,7 @@ This was written with the specific intention of building an ESP-Now to MQTT gate
 
 Don't ask me where you should input your access-point logon credentials.  :-)
 
-The physical connections between the ESP32 and W5500 are different, but simpler than the ESP8266 version (you don't need to buffer GPIO15 on the ESP32).
+The physical connections between the ESP32 and W5500 are different, but simpler than the ESP8266 version (you don't need to buffer SCS chip-select signal on the ESP32).
 
 -  **GPIO23**   <-->   **MOSI**
 -  **GPIO19**   <-->   **MISO**
